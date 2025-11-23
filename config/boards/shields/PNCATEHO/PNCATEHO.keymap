@@ -13,17 +13,17 @@
 #define COMBO_LAYERS 0
 #define STICKY_TIMEOUT 500
 
-// LEFT SIDE ONLY - ПРАВИЛЬНЫЕ ПОЗИЦИИ
-#define TLP 18  // TOP LEFT PRIMARY
-#define TLR 19  // TOP LEFT ROW
-#define TLM 20  // TOP LEFT MIDDLE
-#define TLI 21  // TOP LEFT INNER
-#define BLP 10  // BOTTOM LEFT PRIMARY
-#define BLR 16  // BOTTOM LEFT ROW
-#define BLM 14  // BOTTOM LEFT MIDDLE
-#define BLI 15  // BOTTOM LEFT INNER
-#define LOT 7   // O-THUMB LEFT (Backspace)
-#define LIT 8   // I-THUMB LEFT (Space)
+// LEFT SIDE ONLY - ЛОГИЧЕСКИЕ ПОЗИЦИИ (из matrix_transform)
+#define TLP 0   // TOP LEFT PRIMARY
+#define TLR 1   // TOP LEFT ROW
+#define TLM 2   // TOP LEFT MIDDLE
+#define TLI 3   // TOP LEFT INNER
+#define BLP 4   // BOTTOM LEFT PRIMARY
+#define BLR 5   // BOTTOM LEFT ROW
+#define BLM 6   // BOTTOM LEFT MIDDLE
+#define BLI 7   // BOTTOM LEFT INNER
+#define LOT 8   // O-THUMB LEFT (Backspace)
+#define LIT 9   // I-THUMB LEFT (Space)
 
 &sk {
     release-after-ms = <STICKY_TIMEOUT>;
