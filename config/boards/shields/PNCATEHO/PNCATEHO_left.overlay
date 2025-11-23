@@ -4,7 +4,3 @@
  */
 
 #include "PNCATEHO.dtsi"
-
-&default_transform {
-    col-offset = <0>;
-};
