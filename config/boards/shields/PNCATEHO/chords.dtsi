@@ -3,7 +3,7 @@
  * Left hand only (10 keys)
  * Custom macros and combinations
  *
- * ЛОГИЧЕСКИЕ ПОЗИЦИИ (из matrix_transform):
+ * ЛОГИЧЕСКИЕ ПОЗИЦИИ:
  * TLP=0, TLR=1, TLM=2, TLI=3   (верхний ряд)
  * BLP=4, BLR=5, BLM=6, BLI=7   (нижний ряд)
  * LOT=8, LIT=9                 (большие пальцы)
@@ -27,37 +27,25 @@ combo_shift_greater {
     layers = <0>;
 };
 
-// запятая (EN) / [translate:б] (RU) — BLP (4)
+// Запятая — BLP (4)
 combo_comma {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp COMMA>;
     key-positions = <4>;
     layers = <0>;
 };
-combo_cyrillic_b {
-    timeout-ms = <COMBO_TIMEOUT>;
-    bindings = <&kp CYRIL_B>;
-    key-positions = <4>;
-    layers = <0>;
-};
 
-// точка (EN) / [translate:ю] (RU) — BLR (5)
+// Точка — BLR (5)
 combo_dot {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp DOT>;
     key-positions = <5>;
     layers = <0>;
 };
-combo_cyrillic_yu {
-    timeout-ms = <COMBO_TIMEOUT>;
-    bindings = <&kp CYRIL_YU>;
-    key-positions = <5>;
-    layers = <0>;
-};
 
 // ===== DOUBLE KEY COMBOS (две позиции) =====
 
-// TLP + TLR = Ctrl+V (позиции 0+1)
+// TLP + TLR = Ctrl+V (0+1)
 combo_ctrl_v {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LC(V)>;
@@ -65,7 +53,7 @@ combo_ctrl_v {
     layers = <0>;
 };
 
-// Alt+Tab = TLR + BLR (позиции 1+5)
+// Alt+Tab = TLR + BLR (1+5)
 combo_alt_tab {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LA(TAB)>;
@@ -73,7 +61,7 @@ combo_alt_tab {
     layers = <0>;
 };
 
-// Delete = TLM + BLM (позиции 2+6)
+// Delete = TLM + BLM (2+6)
 combo_delete {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp DEL>;
@@ -81,7 +69,7 @@ combo_delete {
     layers = <0>;
 };
 
-// Enter = TLI + BLI (позиции 3+7)
+// Enter = TLI + BLI (3+7)
 combo_enter {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp ENTER>;
@@ -89,7 +77,7 @@ combo_enter {
     layers = <0>;
 };
 
-// Esc = TLP + BLP (позиции 0+4)
+// Esc = TLP + BLP (0+4)
 combo_escape {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp ESC>;
@@ -97,7 +85,7 @@ combo_escape {
     layers = <0>;
 };
 
-// Alt+S = BLP + BLR + BLM (позиции 4+5+6)
+// Alt+S = BLP + BLR + BLM (4+5+6)
 combo_alt_s {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LA(S)>;
@@ -107,7 +95,7 @@ combo_alt_s {
 
 // ===== TRIPLE KEY COMBOS (три позиции) =====
 
-// Alt+M = TLP + TLR + TLM (позиции 0+1+2)
+// Alt+M = TLP + TLR + TLM (0+1+2)
 combo_alt_m {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LA(M)>;
@@ -115,7 +103,7 @@ combo_alt_m {
     layers = <0>;
 };
 
-// Ctrl+Z = TLP + TLM (позиции 0+2) ИСПРАВЛЕНО!
+// Ctrl+Z = TLP + TLM (0+2) — ИСПРАВЛЕНО!
 combo_ctrl_z {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LC(Z)>;
@@ -125,9 +113,7 @@ combo_ctrl_z {
 
 // ===== QUAD KEY COMBOS (четыре позиции) =====
 
-// Удалено: combo_alt_shift
-
-// Ctrl+A = TLP + TLI (позиции 0+3) ИСПРАВЛЕНО!
+// Ctrl+A = TLP + TLI (0+3) — ИСПРАВЛЕНО!
 combo_ctrl_a {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LC(A)>;
