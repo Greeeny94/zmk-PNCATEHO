@@ -2,136 +2,141 @@
  * PNCATEHO (RISATENO) - Custom Keymap Configuration
  * Left hand only (10 keys)
  * Custom macros and combinations
+ * 
+ * ПОЗИЦИИ (ПРАВИЛЬНЫЕ):
+ * TLP=18, TLR=19, TLM=20, TLI=21   (верхний ряд)
+ * BLP=10, BLR=16, BLM=14, BLI=15   (нижний ряд)
+ * LOT=7,  LIT=8                    (большие пальцы)
  */
 
 // ===== SINGLE KEY COMBOS (одно нажатие) =====
 
-// Shift+/ на позиции BLI (7)
+// Shift+/ на позиции BLI (15)
 combo_shift_slash {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LS(SLASH)>;
-    key-positions = <7>;
+    key-positions = <15>;
     layers = <COMBO_LAYERS>;
 };
 
-// Shift+> на позиции BLM (6)
+// Shift+> на позиции BLM (14)
 combo_shift_greater {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LS(GT)>;
-    key-positions = <6>;
+    key-positions = <14>;
     layers = <COMBO_LAYERS>;
 };
 
 // ===== DOUBLE KEY COMBOS (две позиции) =====
 
-// TLP + TLR = Ctrl+V (позиции 0+1)
+// TLP + TLR = Ctrl+V (позиции 18+19)
 combo_ctrl_v {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LC(V)>;
-    key-positions = <0 1>;
+    key-positions = <18 19>;
     layers = <COMBO_LAYERS>;
 };
 
-// Alt+Tab = TLR + BLR (позиции 1+5)
+// Alt+Tab = TLR + BLR (позиции 19+16)
 combo_alt_tab {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LA(TAB)>;
-    key-positions = <1 5>;
+    key-positions = <19 16>;
     layers = <COMBO_LAYERS>;
 };
 
-// Delete = TLM + BLM (позиции 2+6)
+// Delete = TLM + BLM (позиции 20+14)
 combo_delete {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp DEL>;
-    key-positions = <2 6>;
+    key-positions = <20 14>;
     layers = <COMBO_LAYERS>;
 };
 
-// Enter = TLI + BLI (позиции 3+7)
+// Enter = TLI + BLI (позиции 21+15)
 combo_enter {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp ENTER>;
-    key-positions = <3 7>;
+    key-positions = <21 15>;
     layers = <COMBO_LAYERS>;
 };
 
-// Esc = TLP + BLP (позиции 0+4)
+// Esc = TLP + BLP (позиции 18+10)
 combo_escape {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp ESC>;
-    key-positions = <0 4>;
+    key-positions = <18 10>;
     layers = <COMBO_LAYERS>;
 };
 
-// Alt+S = BLP + BLR + BLM (позиции 4+5+6)
+// Alt+S = BLP + BLR + BLM (позиции 10+16+14)
 combo_alt_s {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LA(S)>;
-    key-positions = <4 5 6>;
+    key-positions = <10 16 14>;
     layers = <COMBO_LAYERS>;
 };
 
 // ===== TRIPLE KEY COMBOS (три позиции) =====
 
-// Alt+M = TLP + TLR + TLM (позиции 0+1+2)
+// Alt+M = TLP + TLR + TLM (позиции 18+19+20)
 combo_alt_m {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LA(M)>;
-    key-positions = <0 1 2>;
+    key-positions = <18 19 20>;
     layers = <COMBO_LAYERS>;
 };
 
-// Ctrl+Z = TLP + TLI + BLP (позиции 0+3+4) - ПРАВКА: вместо 0+3+6
+// Ctrl+Z = TLP + TLI (позиции 18+21) - ИСПРАВЛЕНО: убран лишний BLP
 combo_ctrl_z {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LC(Z)>;
-    key-positions = <0 3 4>;
+    key-positions = <18 21>;
     layers = <COMBO_LAYERS>;
 };
 
 // ===== QUAD KEY COMBOS (четыре позиции) =====
 
-// Alt+Shift = BLP + BLR + BLM + BLI (позиции 4+5+6+7)
+// Alt+Shift = BLP + BLR + BLM + BLI (позиции 10+16+14+15)
 combo_alt_shift {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LA(LS(TAB))>;
-    key-positions = <4 5 6 7>;
+    key-positions = <10 16 14 15>;
     layers = <COMBO_LAYERS>;
 };
 
-// Ctrl+A = TLP + TLR + TLM + TLI (позиции 0+1+2+3)
+// Ctrl+A = TLP + TLR + TLM + TLI (позиции 18+19+20+21)
 combo_ctrl_a {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LC(A)>;
-    key-positions = <0 1 2 3>;
+    key-positions = <18 19 20 21>;
     layers = <COMBO_LAYERS>;
 };
 
-// ===== SPACE и BACKSPACE (на пальцы как в исходном проекте) =====
+// ===== SPACE и BACKSPACE (на пальцы) =====
 
-// Space на LIT (палец 9)
+// Space на LIT (палец 8)
 combo_space {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp SPACE>;
-    key-positions = <9>;
+    key-positions = <8>;
     layers = <COMBO_LAYERS>;
 };
 
-// Backspace на LOT (палец 8)
+// Backspace на LOT (палец 7)
 combo_backspace {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp BACKSPACE>;
-    key-positions = <8>;
+    key-positions = <7>;
     layers = <COMBO_LAYERS>;
 };
 
 // ===== PRIMARY COMBO (самая частая) =====
 
-// TLP (позиция 0) = Ctrl+C
+// TLP (позиция 18) = Ctrl+C
 combo_ctrl_c {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LC(C)>;
-    key-positions = <0>;
+    key-positions = <18>;
     layers = <COMBO_LAYERS>;
 };
