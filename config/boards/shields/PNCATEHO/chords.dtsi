@@ -13,7 +13,7 @@
 
 // Shift+/ на позиции BLI (7)
 combo_shift_slash {
-    timeout-ms = <COMBO_TIMEOUT>;
+     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LS(SLASH)>;
     key-positions = <7>;
     layers = <0>;
