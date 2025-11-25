@@ -1,6 +1,5 @@
 /*
  * Copyright (c) 2020 The ZMK Contributors
- *
  * SPDX-License-Identifier: MIT
  */
 #include <behaviors.dtsi>
@@ -14,7 +13,7 @@
 #define COMBO_LAYERS 0
 #define STICKY_TIMEOUT 500
 
-// LEFT SIDE (позиции 0-9)
+// LEFT SIDE ONLY (10 клавиш)
 #define TLP 0   // TOP LEFT PRIMARY
 #define TLR 1   // TOP LEFT ROW
 #define TLM 2   // TOP LEFT MIDDLE
@@ -23,20 +22,8 @@
 #define BLR 5   // BOTTOM LEFT ROW
 #define BLM 6   // BOTTOM LEFT MIDDLE
 #define BLI 7   // BOTTOM LEFT INNER
-#define LOT 8   // O-THUMB LEFT
-#define LIT 9   // I-THUMB LEFT
-
-// RIGHT SIDE (позиции 10-19)
-#define TRP 19  // TOP RIGHT PRIMARY
-#define TRR 18  // TOP RIGHT ROW
-#define TRM 17  // TOP RIGHT MIDDLE
-#define TRI 16  // TOP RIGHT INNER
-#define BRP 15  // BOTTOM RIGHT PRIMARY
-#define BRR 14  // BOTTOM RIGHT ROW
-#define BRM 13  // BOTTOM RIGHT MIDDLE
-#define BRI 12  // BOTTOM RIGHT INNER
-#define ROT 11  // O-THUMB RIGHT
-#define RIT 10  // I-THUMB RIGHT
+#define LOT 8   // O-THUMB LEFT (Backspace)
+#define LIT 9   // I-THUMB LEFT (Space)
 
 &sk {
     release-after-ms = <STICKY_TIMEOUT>;
@@ -54,12 +41,6 @@
 
     default_layer {
       bindings = <
-        // LEFT SIDE (10 позиций)
-        &none &none &none &none
-        &none &none &none &none
-        &none &none
-        
-        // RIGHT SIDE (10 позиций)
         &none &none &none &none
         &none &none &none &none
         &none &none
