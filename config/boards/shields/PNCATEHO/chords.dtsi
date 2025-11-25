@@ -27,6 +27,22 @@ combo_shift {
     layers = <0>;
 };
 
+// Запятая на позиции BLP (4)
+combo_comma {
+    timeout-ms = <COMBO_TIMEOUT>;
+    bindings = <&kp COMMA>;
+    key-positions = <4>;
+    layers = <0>;
+};
+
+// Точка на позиции BLR (5)
+combo_dot {
+    timeout-ms = <COMBO_TIMEOUT>;
+    bindings = <&kp DOT>;
+    key-positions = <5>;
+    layers = <0>;
+};
+
 // ===== DOUBLE KEY COMBOS (две позиции) =====
 
 // TLP + TLR = Ctrl+V (позиции 0+1)
