@@ -11,13 +11,14 @@
 
 // ===== SINGLE KEY COMBOS (одно нажатие) =====
 
-// Shift+/ на позиции BLI (7)
+// Shift+/ на позиции BLM (6) + BLI (7)
 combo_shift_slash {
-     timeout-ms = <COMBO_TIMEOUT>;
+    timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LS(SLASH)>;
-    key-positions = <7>;
+    key-positions = <6 7>;
     layers = <0>;
 };
+
 
 // / на позиции BLM (6)
 combo_slash {
@@ -26,6 +27,7 @@ combo_slash {
     key-positions = <6>;
     layers = <0>;
 };
+
 
 // Запятая — BLP (4)
 combo_comma {
