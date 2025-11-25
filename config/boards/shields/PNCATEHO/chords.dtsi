@@ -22,7 +22,7 @@ combo_shift_slash {
 // Shift+> на позиции BLM (6)
 combo_shift_greater {
     timeout-ms = <COMBO_TIMEOUT>;
-    bindings = <&kp LS(GT)>;
+    bindings = <&kp LS(DOT)>;
     key-positions = <6>;
     layers = <0>;
 };
