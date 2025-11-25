@@ -87,10 +87,18 @@ combo_alt_m {
     layers = <0>;
 };
 
-// Ctrl+Z = TLP + TLI (позиции 0+3)
+// Ctrl+Z = TLP + TLM (позиции 0+3)
 combo_ctrl_z {
     timeout-ms = <COMBO_TIMEOUT>;
     bindings = <&kp LC(Z)>;
+    key-positions = <0 2>;
+    layers = <0>;
+};
+
+// Ctrl+A = TLP + TLI (позиции 0+3)
+combo_ctrl_a {
+    timeout-ms = <COMBO_TIMEOUT>;
+    bindings = <&kp LC(A)>;
     key-positions = <0 3>;
     layers = <0>;
 };
@@ -105,13 +113,6 @@ combo_alt_shift {
     layers = <0>;
 };
 
-// Ctrl+A = TLP + TLR + TLM + TLI (позиции 0+1+2+3)
-combo_ctrl_a {
-    timeout-ms = <COMBO_TIMEOUT>;
-    bindings = <&kp LC(A)>;
-    key-positions = <0 1 2 3>;
-    layers = <0>;
-};
 
 // ===== SPACE и BACKSPACE (на пальцы) =====
 
