@@ -13,7 +13,7 @@
 #define COMBO_LAYERS 0
 #define STICKY_TIMEOUT 500
 
-// LEFT SIDE ONLY (10 клавиш)
+// LEFT SIDE ONLY - ЛОГИЧЕСКИЕ ПОЗИЦИИ (из matrix_transform)
 #define TLP 0   // TOP LEFT PRIMARY
 #define TLR 1   // TOP LEFT ROW
 #define TLM 2   // TOP LEFT MIDDLE
@@ -41,9 +41,9 @@
 
     default_layer {
       bindings = <
-        &none &none &none &none
-        &none &none &none &none
-        &none &none
+        &none &none &none &none               &none &none &none &none     
+        &none &none &none &none               &none &none &none &none     
+                          &none &none   &none &none &none &none     
       >;
     };
   };
