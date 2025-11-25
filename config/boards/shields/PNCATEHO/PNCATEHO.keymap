@@ -41,10 +41,20 @@
 
     default_layer {
       bindings = <
-        &none &none &none &none               &none &none &none &none     
-        &none &none &kp SLASH &ht &kp LS &none      &none &none &none &none     
-                          &none &none   &none &none  
+        default_layer {
+  bindings = <
+    &none    // TLP (0)
+    &none    // TLR (1)
+    &none    // TLM (2)
+    &none    // TLI (3)
+    &none    // BLP (4)
+    &none    // BLR (5)
+    &kp SLASH // BLM (6)
+    &ht &kp LS &none // BLI (7), hold-tap: hold = shift, tap = none
+    &none    // LOT (8)
+    &none    // LIT (9)
       >;
     };
   };
 };
+
