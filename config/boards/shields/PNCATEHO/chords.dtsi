@@ -19,10 +19,10 @@ combo_shift_slash {
     layers = <0>;
 };
 
-// Shift+> на позиции BLM (6)
-combo_shift_greater {
+// / на позиции BLM (6)
+combo_slash {
     timeout-ms = <COMBO_TIMEOUT>;
-    bindings = <&kp LS(DOT)>;
+    bindings = <&kp SLASH>;
     key-positions = <6>;
     layers = <0>;
 };
