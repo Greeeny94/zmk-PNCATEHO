@@ -42,8 +42,8 @@
     default_layer {
       bindings = <
         &none &none &none &none               &none &none &none &none     
-        &none &none &none &none               &none &none &none &none     
-                          &none &none   &none &none &none &none     
+        &none &none &kp SLASH &ht MOD_LS      &none &none &none &none     
+                          &none &none   &none &none  
       >;
     };
   };
