@@ -45,6 +45,27 @@ combo_dot {
 
 // ===== DOUBLE KEY COMBOS (две позиции) =====
 
+combo_bt_profile_0 {
+    timeout-ms = <COMBO_TIMEOUT>;
+    bindings = <&bt BT_SEL 0>;
+    key-positions = <8 0>;
+    layers = <0>;
+};
+
+combo_bt_profile_1 {
+    timeout-ms = <COMBO_TIMEOUT>;
+    bindings = <&bt BT_SEL 1>;
+    key-positions = <8 1>;
+    layers = <0>;
+};
+
+combo_bt_clear {
+    timeout-ms = <COMBO_TIMEOUT>;
+    bindings = <&bt BT_CLR>;
+    key-positions = <8 3>;
+    layers = <0>;
+};
+
 // TLP + TLR = Ctrl+V (позиции 0+1)
 combo_ctrl_v {
     timeout-ms = <COMBO_TIMEOUT>;
